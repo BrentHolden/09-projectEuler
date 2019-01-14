@@ -1,13 +1,13 @@
-let y;
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
+
+let y = 0;
 
 for (let x = 0; x <= 1000; x++) {
     switch (true){
         case x % 3 == 0 || x % 5 == 0:
-        console.log(x);
         y = x + y;
         break;
     default:
 }
     }
-
 console.log(y);
